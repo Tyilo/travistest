@@ -1,0 +1,12 @@
+matrix:
+  include:
+    - os: linux
+      distro: trusty
+      compiler: gcc
+    - os: linux
+      compiler: clang
+    - os: osx
+      compiler: clang
+language: cpp
+script: uname -a && uname -a
+sudo: false
