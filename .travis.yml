@@ -1,7 +1,7 @@
 matrix:
   include:
     - os: linux
-      distro: trusty
+      dist: trusty
       compiler: gcc
     - os: linux
       compiler: clang
