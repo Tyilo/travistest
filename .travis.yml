@@ -30,3 +30,6 @@ script:
   - uname -a
   - echo /usr/bin/g++-*
   - c++ --version
+  - echo $CC
+  - echo $CXX
+  - c++ foo.cpp -std=c++11
