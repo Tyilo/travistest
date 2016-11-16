@@ -12,8 +12,8 @@ matrix:
           sources:
             - ubuntu-toolchain-r-test
       env:
-        - CC=gcc-5
-        - CXX=g++-5
+        - _CC=gcc-5
+        - _CXX=g++-5
     - os: linux
       dist: trusty
       sudo: required
@@ -23,6 +23,8 @@ matrix:
       compiler: clang
 language: cpp
 script:
+  - if [ -n "$_CC" ]; then export CC=$_CC; fi
+  - if [ -n "$_CXX" ]; then export CXX=$_CXX; fi
   - env
   - cat .travis.yml
   - $CC --version
