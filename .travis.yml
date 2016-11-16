@@ -18,6 +18,12 @@ matrix:
       dist: trusty
       sudo: required
       compiler: clang
+      addons:
+        apt:
+          packages:
+            - libstdc++-5-dev
+          sources:
+            - ubuntu-toolchain-r-test
     - os: osx
       sudo: false
       compiler: clang
