@@ -23,6 +23,7 @@ matrix:
       compiler: clang
 language: cpp
 script:
+  - env
   - cat .travis.yml
   - $CC --version
   - $CXX --version
