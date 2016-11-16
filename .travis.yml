@@ -9,6 +9,8 @@ matrix:
           packages:
             - gcc-5
             - g++-5
+          sources:
+            - ubuntu-toolchain-r-test
     - os: linux
       dist: trusty
       sudo: required
@@ -18,6 +20,8 @@ matrix:
           packages:
             - gcc-5
             - g++-5
+          sources:
+            - ubuntu-toolchain-r-test
     - os: osx
       sudo: false
       compiler: clang
