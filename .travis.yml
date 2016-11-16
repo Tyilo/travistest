@@ -3,11 +3,25 @@ matrix:
     - os: linux
       dist: trusty
       sudo: required
-      compiler: gcc
+      compiler: gcc5
+      addons:
+        apt:
+          packages:
+            - gcc-5
+            - g++-5
+          sources:
+            - ubuntu-toolchain-r-test
     - os: linux
       dist: trusty
       sudo: required
       compiler: clang
+      addons:
+        apt:
+          packages:
+            - gcc-5
+            - g++-5
+          sources:
+            - ubuntu-toolchain-r-test
     - os: osx
       sudo: false
       compiler: clang
