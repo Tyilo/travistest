@@ -33,3 +33,5 @@ script:
   - c++ foo.cpp -std=c++11
   - g++-5 foo.cpp -std=c++11
   - clang++ foo.cpp -std=c++11
+notifications:
+  email: false
