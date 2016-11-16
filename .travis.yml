@@ -3,7 +3,7 @@ matrix:
     - os: linux
       dist: trusty
       sudo: required
-      compiler: gcc5
+      compiler: gcc-5
       addons:
         apt:
           packages:
@@ -29,4 +29,7 @@ script:
   - c++ --version
   - echo $CC
   - echo $CXX
+  - $CXX --version
   - c++ foo.cpp -std=c++11
+  - g++-5 foo.cpp -std=c++11
+  - clang++ foo.cpp -std=c++11
