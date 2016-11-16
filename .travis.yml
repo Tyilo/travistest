@@ -23,6 +23,7 @@ matrix:
       compiler: clang
 language: cpp
 script:
+  - cat .travis.yml
   - uname -a
   - echo /usr/bin/g++-*
   - c++ --version
