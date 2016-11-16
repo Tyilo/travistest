@@ -11,6 +11,9 @@ matrix:
             - g++-5
           sources:
             - ubuntu-toolchain-r-test
+      env:
+        - CC=gcc-5
+        - CXX=g++-5
     - os: linux
       dist: trusty
       sudo: required
@@ -28,14 +31,8 @@ matrix:
 language: cpp
 script:
   - cat .travis.yml
-  - uname -a
-  - echo /usr/bin/g++-*
-  - c++ --version
-  - echo $CC
-  - echo $CXX
+  - $CC --version
   - $CXX --version
-  - c++ foo.cpp -std=c++11
-  - g++-5 foo.cpp -std=c++11
-  - clang++ foo.cpp -std=c++11
+  - $CXX foo.cpp -std=c++11
 notifications:
   email: false
