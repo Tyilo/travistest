@@ -29,6 +29,9 @@ matrix:
       compiler: clang
 before_install:
   - echo "before install"
+  - brew install boost
+  - brew --version
+  - brew install
 install:
   - echo "install"
 before_script:
