@@ -27,10 +27,12 @@ matrix:
     - os: osx
       sudo: false
       compiler: clang
-before install:
+before_install:
   - echo "before install"
 install:
   - echo "install"
+before_script:
+  - echo "before script"
 language: cpp
 script:
   - echo "script"
