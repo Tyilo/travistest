@@ -30,5 +30,6 @@ script:
   - $CC --version
   - $CXX --version
   - $CXX foo.cpp -std=c++11
+  - ./a.out
 notifications:
   email: false
