@@ -5,11 +5,17 @@ matrix:
       compiler: gcc
     - os: osx
       sudo: false
+      compiler: gcc
+      env:
+        - _CC=gcc-5
+        - _CXX=g++-5
+    - os: osx
+      sudo: false
       compiler: clang
 before_install:
   - echo "before install"
   - brew update
-  - brew install boost
+  - brew install gcc-5
 install:
   - echo "install"
 before_script:
