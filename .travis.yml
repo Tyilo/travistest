@@ -1,7 +1,3 @@
-env:
-  - A=1
-  - A=2
-
 matrix:
   include:
     - os: linux
@@ -43,7 +39,7 @@ before_script:
 language: cpp
 script:
   - echo "script"
-  - echo "$A"
+  - false
   - if [ -n "$_CC" ]; then export CC=$_CC; fi
   - if [ -n "$_CXX" ]; then export CXX=$_CXX; fi
   - env
