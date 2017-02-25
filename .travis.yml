@@ -15,7 +15,7 @@ matrix:
 before_install:
   - echo "before install"
   - brew update
-  - brew install gcc-5
+  - brew install gcc@5
 install:
   - echo "install"
 before_script:
