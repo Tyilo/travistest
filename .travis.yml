@@ -14,7 +14,7 @@ before_install:
   - brew update
   - if [[ "$TRAVIS_OS_NAME" == "osx" && "$_CC" == "gcc-"* ]]; then brew install "${_CC/-/@}"; fi
   - if [[ "$TRAVIS_OS_NAME" == "osx" && "$_CC" == "gcc-"* ]]; then
-      echo "Ayyy!!"
+      echo "Ayyy!!";
     fi
 install:
   - echo "install"
